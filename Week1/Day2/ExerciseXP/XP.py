@@ -40,8 +40,13 @@ start_number = 1.5
 end_number = 5.0
 step = 0.5
 while start_number <= end_number:
-    numbers.append(start_number)
+    if start_number.is_integer() :
+        numbers.append(int(start_number))
+    else :
+        numbers.append(start_number)
+    
     start_number += step
+
 print(numbers)
 
 # Exercise 5: For Loop
@@ -107,7 +112,7 @@ print("Total ticket cost: $", total_cost)
 #Bonus
 allowed = []
 
-for i in range(int(input("How many people? over 16 and under 21"))):
+for i in range(int(input("How many people? over 16 and under 21: "))):
     age = int(input("Enter age: "))
     if 16 <= age <= 21:
         allowed.append(age)
