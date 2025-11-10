@@ -13,7 +13,7 @@ class Farm:
         #else:
             #self.animals[animal_type] = count
 
-    # Step 7:
+    # Step 8: upgrade the add_animal Method
     def add_animal(self, **kwargs):
     # Loop through all animals passed as keyword arguments
        for animal_type, count in kwargs.items():
