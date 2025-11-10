@@ -5,13 +5,13 @@ class Farm:
         self.animals = {}
 
     # Step 3: Add animals to the farm
-    def add_animal(self, animal_type, count=1):
+    #def add_animal(self, animal_type, count=1):
         # If animal exists, increase count; otherwise, add new animal
         # (We don't need self.animal_type — just use the local variable)
-        if animal_type in self.animals:
-            self.animals[animal_type] += count
-        else:
-            self.animals[animal_type] = count
+        #if animal_type in self.animals:
+            #self.animals[animal_type] += count
+        #else:
+            #self.animals[animal_type] = count
 
     # Step 7:
     def add_animal(self, **kwargs):
@@ -55,10 +55,13 @@ class Farm:
 
 # Step 5: Test the class
 macdonald = Farm("McDonald")
-macdonald.add_animal('cow', 5)
-macdonald.add_animal('sheep')
-macdonald.add_animal('sheep')
-macdonald.add_animal('goat', 12)
+#macdonald.add_animal('cow', 5)
+#macdonald.add_animal('sheep')
+#macdonald.add_animal('sheep')
+#macdonald.add_animal('goat', 12)
+macdonald.add_animal(cow=5, goat=12, lion=3, camel=2, horse=12,tiger=1)
+macdonald.add_animal(sheep=1)
+macdonald.add_animal(sheep=1)
 
 print(macdonald.get_info())
 print(macdonald.get_animal_types())
