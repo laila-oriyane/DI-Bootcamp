@@ -1,5 +1,5 @@
 # Exercise 1: Cats
-class Cat() :
+class Cat :
     def __init__(self,name,age):
         self.name=name
         self.age=age
@@ -20,7 +20,7 @@ oldest_cat = find_oldest_cat(cat1,cat2,cat3)
 print(f"The oldest cat name is {oldest_cat.name}, and age is {oldest_cat.age} years old")
 
 # Exercise 2 : Dogs
-class Dog() :
+class Dog :
     def __init__(self,name,height):
         self.name=name
         self.height=height
@@ -48,7 +48,7 @@ else:
     print("Both dogs are the same height.")
 
 # Exercise 3 : Who’s the song producer?
-class Song() :
+class Song:
     def __init__(self,lyrics):
         self.lyrics=lyrics
 
@@ -60,7 +60,7 @@ stairway = Song(["There’s a lady who's sure", "all that glitters is gold", "an
 stairway.sing_me_a_song()
 
 # Exercise 4 : Afternoon at the Zoo
-class Zoo():
+class Zoo :
     def __init__(self,zoo_name):
         self.zoo_name=zoo_name
         self.animals=[]
