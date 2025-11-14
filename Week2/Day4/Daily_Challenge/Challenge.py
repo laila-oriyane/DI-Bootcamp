@@ -80,6 +80,14 @@ class TextModification(Text):
         cleaned_text = re.sub(r"[^A-Za-z0-9\s]", "", self.text)
         return cleaned_text
 
+text = Text("hello world hello python")
+print("Text : ",text)
+print("Text hello frequency : ",text.word_frequency("hello"))    # 2
+print("Text java frequency : ",text.word_frequency("java"))     # None
+print("Most common word : ",text.most_common_word())         # "hello"
+print("Text unique word : ",text.unique_words())             # ["hello", "world", "python"] (order may vary)
+
+
 txt = TextModification("Hello, word!!! This is a test $@$")
 print("Original Text : ",txt)
 
